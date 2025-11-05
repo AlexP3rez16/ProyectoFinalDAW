@@ -36,6 +36,13 @@ Inicio
 
 ---
 
+### Wireframes
+https://www.figma.com/site/MS2yJnGRu3jULKNVo6KPA3/Untitled?node-id=0-1&p=f&t=BlZ1sFT6wMbPxfRn-0
+
+Link a Figma
+
+---
+
 ### 👥 Integrantes del equipo
 
 - Jesús Alejandro Pérez Rodríguez — 628444  
