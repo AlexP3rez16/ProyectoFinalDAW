@@ -45,7 +45,11 @@ Link a Figma
 
 ### 👥 Integrantes del equipo
 
-- Jesús Alejandro Pérez Rodríguez — 628444  
-- Gabriel Ortiz Sepúlveda — 638222  
-- Manuel Bonavena — 625440  
-- Adrián Vázquez — 625860  
+- Jesús Alejandro Pérez Rodríguez — 628444
+    Desarrollo los HTML y CSS
+- Gabriel Ortiz Sepúlveda — 638222
+    Desarrollo los wireframes
+- Manuel Bonavena — 625440
+    Desarrollo el documento y documentacion
+- Adrián Vázquez — 625860
+    Desarrollo los wireframes
