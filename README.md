@@ -36,20 +36,9 @@ Inicio
 
 ---
 
-### Wireframes
-https://www.figma.com/site/MS2yJnGRu3jULKNVo6KPA3/Untitled?node-id=0-1&p=f&t=BlZ1sFT6wMbPxfRn-0
-
-Link a Figma
-
----
-
 ### 👥 Integrantes del equipo
 
-- Jesús Alejandro Pérez Rodríguez — 628444
-    Desarrollo los HTML y CSS
-- Gabriel Ortiz Sepúlveda — 638222
-    Desarrollo los wireframes
-- Manuel Bonavena — 625440
-    Desarrollo el documento y documentacion
-- Adrián Vázquez — 625860
-    Desarrollo los wireframes
+- Jesús Alejandro Pérez Rodríguez — 628444  
+- Gabriel Ortiz Sepúlveda — 638222  
+- Manuel Bonavena — 625440  
+- Adrián Vázquez — 625860  
