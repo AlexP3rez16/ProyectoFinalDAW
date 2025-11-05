@@ -1,0 +1,146 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo Hecho en NL — Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar" role="banner">
+    <div class="wrapper topbar-inner">
+      <a class="brand" href="/" aria-label="Inicio">
+        <span class="brand-badge" aria-hidden="true">NL</span>
+        <span>Hecho en Nuevo León</span>
+      </a>
+    </div>
+
+    <nav class="primary" aria-label="Categorías principales">
+      <div class="wrapper">
+        <ul class="nav-list" role="list">
+          <li><a href="#" aria-current="page">Inicio</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#destacados">Destacados</a></li>
+          <li><a href="#emprendedores">Emprendedores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido" class="wrapper" tabindex="-1">
+    <!-- Hero / Intro -->
+    <section class="hero" aria-labelledby="t-intro">
+      <h1 id="t-intro">Productos locales, calidad real</h1>
+      <p>Explora categorías, busca por nombre o descubre lo más reciente del ecosistema emprendedor en NL.</p>
+    </section>
+
+    <!-- Buscador -->
+    <section class="search" aria-labelledby="t-buscar">
+      <h2 id="t-buscar" class="visually-hidden">Buscador</h2>
+      <form role="search" aria-label="Buscar productos o emprendedores" action="/buscar" method="get">
+        <label class="visually-hidden" for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar artesanías, alimentos, servicios…" autocomplete="off" />
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Categorías principales -->
+    <section id="categorias" class="categories" aria-labelledby="t-categorias">
+      <h2 id="t-categorias" class="visually-hidden">Categorías</h2>
+
+      <a class="surface category-card" href="/categoria/artesanias">
+        <div>
+          <div class="category-title">Hogar y Decoracion</div>
+          <div class="category-desc">Hogar y Decoracion.</div>
+        </div>
+      </a>
+
+      <a class="surface category-card" href="/categoria/alimentos">
+        <div>
+          <div class="category-title">Alimentos</div>
+          <div class="category-desc">Alimentos.</div>
+        </div>
+      </a>
+
+      <a class="surface category-card" href="/categoria/servicios">
+        <div>
+          <div class="category-title">Moda y Accesorios</div>
+          <div class="category-desc">Moda y Accesorios.</div>
+        </div>
+      </a>
+
+      <a class="surface category-card" href="/categoria/servicios">
+        <div>
+          <div class="category-title">Mascota</div>
+          <div class="category-desc">Mascotas.</div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Productos destacados -->
+    <section id="destacados" aria-labelledby="t-destacados" style="margin-top: var(--gap-4);">
+      <div class="surface" style="padding: var(--gap-2); margin-bottom: var(--gap-2);">
+        <h2 id="t-destacados" style="margin: 0; font-size: 1.2rem;">Destacados</h2>
+      </div>
+
+      <div class="products-grid">
+        <article class="surface product-card" aria-labelledby="p1-title">
+          <div class="product-media">
+            <img src="/img/placeholder-1.jpg" alt="Producto destacado genérico 1" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p1-title" class="product-title">Producto / Artesanía</h3>
+            <div class="product-meta"><span>$000</span><span>NL · MX</span></div>
+            <div class="product-actions">
+              <a class="btn-secondary" href="/producto/1">Ver</a>
+              <a class="btn-secondary" href="/emprendedor/1">Ver emprendedor</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface product-card" aria-labelledby="p2-title">
+          <div class="product-media">
+            <img src="/img/placeholder-2.jpg" alt="Producto destacado genérico 2" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p2-title" class="product-title">Producto / Alimento</h3>
+            <div class="product-meta"><span>$000</span><span>NL · MX</span></div>
+            <div class="product-actions">
+              <a class="btn-secondary" href="/producto/2">Ver</a>
+              <a class="btn-secondary" href="/emprendedor/2">Ver emprendedor</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface product-card" aria-labelledby="p3-title">
+          <div class="product-media">
+            <img src="/img/placeholder-3.jpg" alt="Producto destacado genérico 3" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p3-title" class="product-title">Producto / Servicio</h3>
+            <div class="product-meta"><span>$000</span><span>NL · MX</span></div>
+            <div class="product-actions">
+              <a class="btn-secondary" href="/producto/3">Ver</a>
+              <a class="btn-secondary" href="/emprendedor/3">Ver emprendedor</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="wrapper" role="contentinfo">
+    <p style="margin-top: 0;">&copy; <span id="y"></span> Hecho en Nuevo León — Proyecto académico.</p>
+    <nav aria-label="Enlaces de pie">
+      <ul>
+        <li><a href="#">Términos</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="mailto:contacto@example.com">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

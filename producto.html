@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Producto — Hecho en NL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrapper topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">NL</span>
+        <span>Hecho en Nuevo León</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrapper" id="contenido">
+    <section class="hero" aria-labelledby="t-producto">
+      <h1 id="t-producto">Pulsera de cuero artesanal</h1>
+      <p>Hecha a mano por <a href="emprendedor.html" style="color: var(--brand)">Juan Pérez</a>.</p>
+    </section>
+
+    <section class="surface" style="padding: var(--gap-3); margin-top: var(--gap-3);">
+      <div class="product-media" style="aspect-ratio: 4 / 3;">
+        <img src="/img/placeholder-1.jpg" alt="Pulsera de cuero artesanal" loading="lazy" />
+      </div>
+
+      <div style="margin-top: var(--gap-2);">
+        <h2>Descripción</h2>
+        <p>Esta pulsera está hecha con cuero genuino de origen local. Diseñada para durar y lucir con estilo. Ideal para uso diario o como regalo.</p>
+
+        <h3>Detalles</h3>
+        <ul style="list-style: none; padding: 0; color: var(--muted);">
+          <li><strong>Material:</strong> Cuero natural</li>
+          <li><strong>Tamaño:</strong> Ajustable</li>
+          <li><strong>Color:</strong> Marrón oscuro</li>
+          <li><strong>Hecho en:</strong> Monterrey, NL</li>
+        </ul>
+
+        <h2 style="margin-top: var(--gap-3); color: var(--brand-strong);">$250 MXN</h2>
+        <button class="btn-secondary" style="background: var(--brand); color: white; border: none;">Comprar</button>
+      </div>
+    </section>
+
+    <section style="margin-top: var(--gap-4);">
+      <h2>Otros productos del mismo emprendedor</h2>
+      <div class="products-grid">
+        <article class="surface product-card">
+          <div class="product-media">
+            <img src="/img/placeholder-2.jpg" alt="Llavero bordado" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Llavero bordado</h3>
+            <div class="product-meta"><span>$120 MXN</span><span>Disponible</span></div>
+            <div class="product-actions">
+              <a class="btn-secondary" href="producto.html">Ver producto</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrapper" role="contentinfo">
+    <p>&copy; <span id="y"></span> Hecho en Nuevo León — Proyecto académico.</p>
+  </footer>
+
+</body>
+</html>
