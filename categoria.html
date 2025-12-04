@@ -1,0 +1,115 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Categoría — Hecho en NL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar" role="banner">
+    <div class="wrapper topbar-inner">
+      <a class="brand" href="index.html" aria-label="Inicio">
+        <span class="brand-badge" aria-hidden="true">NL</span>
+        <span>Hecho en Nuevo León</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido" class="wrapper" tabindex="-1">
+    <!-- Migas de pan / breadcrumb -->
+    <nav aria-label="Migas de pan" style="margin-top: var(--gap-2); color: var(--muted);">
+      <a href="index.html" style="color: var(--brand)">Inicio</a> <span aria-hidden="true">›</span> <span>Categoría</span>
+    </nav>
+
+    <!-- Encabezado de categoría -->
+    <section class="hero" aria-labelledby="t-categoria">
+      <h1 id="t-categoria">Alimentos</h1>
+      <p>Alimentos.</p>
+    </section>
+
+    <!-- Controles (búsqueda y orden) -->
+    <section class="surface" style="padding: var(--gap-2);">
+      <form role="search" aria-label="Filtrar productos de la categoría" class="filter-form" style="display:grid; grid-template-columns: 1fr auto auto; gap: .5rem; align-items:center;">
+        <label for="q" class="visually-hidden">Buscar en la categoría</label>
+        <input id="q" name="q" type="search" placeholder="Buscar en Artesanías…" />
+
+        <label for="orden" class="visually-hidden">Ordenar por</label>
+        <select id="orden" name="orden" style="padding:.7rem 1rem; border:1px solid var(--border); border-radius: var(--radius); background:#fff;">
+          <option value="relevancia">Relevancia</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+          <option value="recientes">Más recientes</option>
+        </select>
+
+        <button type="submit" class="pill" style="padding:.75rem 1rem; background: var(--brand); color:#fff; border:0;">Aplicar</button>
+      </form>
+    </section>
+
+    <!-- Grid de productos de la categoría -->
+    <section aria-labelledby="t-listado" style="margin-top: var(--gap-3);">
+      <h2 id="t-listado" class="visually-hidden">Listado de productos</h2>
+      <div class="products-grid">
+        <!-- Tarjeta 1 -->
+        <article class="surface product-card" aria-labelledby="p1-title">
+          <div class="product-media">
+            <img src="/img/placeholder-1.jpg" alt="Alimento" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p1-title" class="product-title"><a href="producto.html">Miel de abeja</a></h3>
+            <div class="product-meta"><span>$350 MXN</span><a class="btn-secondary" href="emprendedor.html">Emprendedor</a></div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="surface product-card" aria-labelledby="p2-title">
+          <div class="product-media">
+            <img src="/img/placeholder-2.jpg" alt="Alimento" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p2-title" class="product-title"><a href="producto.html">Salsa de Aguacate</a></h3>
+            <div class="product-meta"><span>$520 MXN</span><a class="btn-secondary" href="emprendedor.html">Emprendedor</a></div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="surface product-card" aria-labelledby="p3-title">
+          <div class="product-media">
+            <img src="/img/placeholder-3.jpg" alt="Alimento" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p3-title" class="product-title"><a href="producto.html">Pan Artesanal</a></h3>
+            <div class="product-meta"><span>$180 MXN</span><a class="btn-secondary" href="emprendedor.html">Emprendedor</a></div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="surface product-card" aria-labelledby="p4-title">
+          <div class="product-media">
+            <img src="/img/placeholder-4.jpg" alt="Alimento" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <h3 id="p4-title" class="product-title"><a href="producto.html">Alimento 4</a></h3>
+            <div class="product-meta"><span>$299 MXN</span><a class="btn-secondary" href="emprendedor.html">Emprendedor</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Paginación simple -->
+    <nav aria-label="Paginación" style="margin: var(--gap-3) 0; display:flex; gap:.5rem;">
+      <a class="btn-secondary" href="#">« Anterior</a>
+      <a class="btn-secondary" href="#">1</a>
+      <a class="btn-secondary" href="#" aria-current="page">2</a>
+      <a class="btn-secondary" href="#">3</a>
+      <a class="btn-secondary" href="#">Siguiente »</a>
+    </nav>
+  </main>
+
+  <footer class="wrapper" role="contentinfo">
+    <p style="margin-top:0">&copy; <span id="y"></span> Hecho en Nuevo León — Proyecto académico.</p>
+  </footer>
+
+</body>
+</html>
