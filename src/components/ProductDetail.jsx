@@ -1,11 +1,13 @@
-// src/components/ProductDetail.jsx
+// Vista de detalle de un solo producto, usando el id de la URL
 import { useParams, Link } from "react-router-dom"
 import { PRODUCTS, ENTREPRENEURS } from "../data"
 
 function ProductDetail() {
   const { id } = useParams()
+  // Convertimos el id a número y buscamos el producto correspondiente
   const product = PRODUCTS.find(p => p.id === Number(id))
 
+  // Si el producto no existe, mostramos un mensaje de error simple
   if (!product) {
     return (
       <div style={{ padding: "var(--gap-3)" }}>
@@ -17,6 +19,7 @@ function ProductDetail() {
     )
   }
 
+  // De nuevo buscamos el emprendedor dueño del producto
   const owner = ENTREPRENEURS.find(e => e.id === product.entrepreneurId)
 
   return (
@@ -31,7 +34,7 @@ function ProductDetail() {
         className="surface"
         style={{ padding: "var(--gap-3)", marginTop: "var(--gap-3)" }}
       >
-        {/* 🔥 AQUÍ SE MUESTRA LA IMAGEN REAL DEL PRODUCTO */}
+        {/* Imagen principal del producto */}
         <div className="product-media" style={{ marginBottom: "var(--gap-2)" }}>
           {product.image ? (
             <img

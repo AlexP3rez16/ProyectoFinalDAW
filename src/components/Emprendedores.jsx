@@ -1,3 +1,4 @@
+// Página que lista a todos los emprendedores registrados en el dataset
 import { ENTREPRENEURS } from "../data"
 import EntrepreneurCard from "./EntrepreneurCard"
 
@@ -12,6 +13,7 @@ function Emprendedores() {
       <section>
         <h2 className="section-title">Todos los emprendedores</h2>
         <div className="entrepreneurs-grid">
+          {/* Recorremos el arreglo y usamos la tarjeta de emprendedor para cada uno */}
           {ENTREPRENEURS.map(e => (
             <EntrepreneurCard key={e.id} entrepreneur={e} />
           ))}

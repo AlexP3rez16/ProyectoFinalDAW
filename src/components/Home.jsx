@@ -1,9 +1,10 @@
-// src/components/Home.jsx
+// Página de inicio: muestra buscador, categorías y algunos productos destacados
 import { CATEGORIES, PRODUCTS } from "../data"
 import CategoryCard from "./CategoryCard"
 import ProductCard from "./ProductCard"
 
 function Home() {
+  // Tomamos solo los primeros 3 productos como destacados
   const destacados = PRODUCTS.slice(0, 3)
 
   return (
@@ -13,6 +14,7 @@ function Home() {
         <p>Explora el ecosistema emprendedor de Nuevo León.</p>
       </section>
 
+      {/* Buscador (por ahora solo visual, sin lógica de filtrado) */}
       <section className="search">
         <form role="search">
           <label className="visually-hidden" htmlFor="q">
@@ -26,6 +28,7 @@ function Home() {
       <section>
         <h2 className="section-title">Categorías</h2>
         <div className="categories-grid">
+          {/* Pintamos todas las categorías y solo a "alimentos" le damos ruta específica */}
           {CATEGORIES.map(cat => (
             <CategoryCard
               key={cat.id}

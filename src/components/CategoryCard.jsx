@@ -1,7 +1,8 @@
-// src/components/CategoryCard.jsx
+// Tarjeta genérica para mostrar una categoría (con o sin link)
 import { Link } from "react-router-dom"
 
 function CategoryCard({ category, to }) {
+  // Si viene la prop "to", usamos Link, si no, solo un article estático
   const Wrapper = to ? Link : "article"
   const wrapperProps = to ? { to } : {}
 
