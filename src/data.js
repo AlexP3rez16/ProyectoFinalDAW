@@ -39,6 +39,7 @@ export const ENTREPRENEURS = [
     phone: "+52 81 1234 5678",
     categories: ["hogar", "moda"],
     bio: "Productos hechos a mano con materiales locales.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVwXzYKZkFnLAjG7gQ57lxaSWjJwxn0I9Vw&s"
   },
   {
     id: 2,
@@ -49,6 +50,7 @@ export const ENTREPRENEURS = [
     phone: "+52 81 2222 3344",
     categories: ["alimentos"],
     bio: "Salsas y mermeladas artesanales.",
+    image: "https://img.freepik.com/foto-gratis/mujer-joven-hermosa-que-mira-camara-pais_1301-4322.jpg?semt=ais_hybrid&w=740&q=80"
   },
   {
     id: 3,
@@ -59,8 +61,10 @@ export const ENTREPRENEURS = [
     phone: "+52 81 9876 5432",
     categories: ["mascotas"],
     bio: "Snacks y accesorios para mascotas.",
+    image: "https://preview.redd.it/jordan-walker-oldest-looking-23-year-old-of-all-time-v0-srzkma79uaif1.png?auto=webp&s=e49ea792e2dc4050a97259adcb75885d634e1caa"
   },
 ]
+
 
 // productos
 export const PRODUCTS = [
@@ -101,4 +105,3 @@ export const PRODUCTS = [
     image: collarPerroImg
   }
 ];
-
