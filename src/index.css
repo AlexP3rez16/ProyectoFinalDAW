@@ -154,3 +154,23 @@ footer nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1re
 .nav-list {
   justify-content: center;
 }
+
+/* ---- Avatar emprendedores ---- */
+
+.entrepreneur-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para recorte adecuado */
+}
