@@ -1,32 +1,47 @@
 // src/components/ProductDetail.jsx
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { PRODUCTS, ENTREPRENEURS } from "../data"
 
 function ProductDetail() {
   const { id } = useParams()
-  const productId = Number(id)
-  const product = PRODUCTS.find(p => p.id === productId)
+  const product = PRODUCTS.find(p => p.id === Number(id))
 
   if (!product) {
-    return <p>Producto no encontrado.</p>
+    return (
+      <div style={{ padding: "var(--gap-3)" }}>
+        <h1>Producto no encontrado</h1>
+        <Link to="/" className="button">
+          Volver al inicio
+        </Link>
+      </div>
+    )
   }
 
   const owner = ENTREPRENEURS.find(e => e.id === product.entrepreneurId)
 
   return (
-    <>
-      <section className="hero">
-        <h1>{product.name}</h1>
-        {owner && (
-          <p>
-            Hecho por <strong>{owner.brand}</strong> — {owner.city}
-          </p>
-        )}
-      </section>
+    <div style={{ padding: "var(--gap-3)" }}>
+      <Link to="/" className="button" style={{ marginBottom: "var(--gap-3)" }}>
+        ⟵ Volver
+      </Link>
 
-      <section className="surface" style={{ padding: "var(--gap-3)", marginTop: "var(--gap-3)" }}>
+      <h1>{product.name}</h1>
+
+      <section
+        className="surface"
+        style={{ padding: "var(--gap-3)", marginTop: "var(--gap-3)" }}
+      >
+        {/* 🔥 AQUÍ SE MUESTRA LA IMAGEN REAL DEL PRODUCTO */}
         <div className="product-media" style={{ marginBottom: "var(--gap-2)" }}>
-          <div className="img-placeholder" aria-hidden="true" />
+          {product.image ? (
+            <img
+              src={product.image}
+              alt={product.name}
+              style={{ width: "100%", borderRadius: "8px" }}
+            />
+          ) : (
+            <div className="img-placeholder" aria-hidden="true" />
+          )}
         </div>
 
         <h2>Precio</h2>
@@ -36,10 +51,31 @@ function ProductDetail() {
 
         <h2 style={{ marginTop: "var(--gap-3)" }}>Descripción</h2>
         <p className="muted">
-          Descripción pendiente. Este es un placeholder hasta que tengamos la ficha real.
+          Descripción del producto próximamente. Este es un placeholder para la
+          entrega del proyecto.
         </p>
       </section>
-    </>
+
+      <section
+        className="surface"
+        style={{ padding: "var(--gap-3)", marginTop: "var(--gap-3)" }}
+      >
+        <h2>Emprendedor</h2>
+
+        {owner ? (
+          <div>
+            <p>
+              <strong>{owner.brand}</strong> — {owner.name}
+            </p>
+            <p>{owner.city}</p>
+            <p>Email: {owner.email}</p>
+            <p>Teléfono: {owner.phone}</p>
+          </div>
+        ) : (
+          <p className="muted">Emprendedor no encontrado.</p>
+        )}
+      </section>
+    </div>
   )
 }
 
