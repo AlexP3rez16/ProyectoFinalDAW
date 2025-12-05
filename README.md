@@ -42,3 +42,54 @@ Inicio
 - Gabriel Ortiz Sepúlveda — 638222  
 - Manuel Bonavena — 625440  
 - Adrián Vázquez — 625860  
+
+##Descripción técnica de los componentes
+App.jsx
+
+Define las rutas principales y mantiene el <Navbar /> visible en todo el sitio.
+
+Navbar.jsx
+
+Menú de navegación con enlaces a Inicio, Alimentos y Emprendedores.
+
+Home.jsx
+
+Página principal con hero, categorías, buscador visual y productos destacados.
+
+CategoriaAlimentos.jsx
+
+Filtra productos cuyo categoryId === "alimentos" y los muestra con ProductCard.
+
+ProductCard.jsx
+
+Tarjeta que muestra imagen, nombre, precio y marca del emprendedor.
+Cada tarjeta lleva al detalle del producto.
+
+ProductDetail.jsx
+
+Muestra la información individual de cada producto, incluyendo su emprendedor.
+
+Emprendedores.jsx y EntrepreneurCard.jsx
+
+Lista de emprendedores + tarjetas individuales con foto, marca, ciudad y bio.
+
+🚧 Mejoras futuras
+
+Buscador funcional.
+
+Más categorías además de alimentos.
+
+Conectar los datos a un backend real.
+
+Panel de administración para emprendedores.
+
+Paginación real y filtros avanzados.
+
+## 🧱 Stack tecnológico
+
+- **Framework:** React  
+- **Dev Server / Bundler:** Vite  
+- **Routing:** `react-router-dom`  
+- **Linting:** ESLint con reglas para React y Hooks  
+- **Estilos:** CSS modular mediante clases globales  
+- **Dataset:** Datos mock de productos y emprendedores en `data.js`
