@@ -1,4 +1,8 @@
 // src/data.js
+import mielImg from "./assets/miel.jpg";
+import salsaAguacateImg from "./assets/salsa-aguacate.jpg";
+import collarPerroImg from "./assets/collar-perro.webp";
+import artesaniaBarroImg from "./assets/artesania-de-barro.webp";
 
 // categorías principales
 export const CATEGORIES = [
@@ -67,6 +71,7 @@ export const PRODUCTS = [
     currency: "MXN",
     categoryId: "alimentos",
     entrepreneurId: 2,
+    image: mielImg
   },
   {
     id: 2,
@@ -75,14 +80,16 @@ export const PRODUCTS = [
     currency: "MXN",
     categoryId: "alimentos",
     entrepreneurId: 2,
+    image: salsaAguacateImg
   },
   {
     id: 3,
-    name: "Pulsera de cuero",
-    price: 250,
+    name: "Artesanía de barro",
+    price: 299,
     currency: "MXN",
-    categoryId: "moda",
+    categoryId: "artesanias",
     entrepreneurId: 1,
+    image: artesaniaBarroImg
   },
   {
     id: 4,
@@ -91,5 +98,7 @@ export const PRODUCTS = [
     currency: "MXN",
     categoryId: "mascotas",
     entrepreneurId: 3,
-  },
-]
+    image: collarPerroImg
+  }
+];
+

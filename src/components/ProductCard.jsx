@@ -8,7 +8,11 @@ function ProductCard({ product }) {
   return (
     <Link to={`/producto/${product.id}`} className="surface product-card">
       <div className="product-media">
-        <div className="img-placeholder" aria-hidden="true" />
+        {product.image ? (
+          <img src={product.image} alt={product.name} />
+        ) : (
+          <div className="img-placeholder" aria-hidden="true" />
+        )}
       </div>
 
       <div className="product-body">
